@@ -1,3 +1,4 @@
+
 const flight='LH234';
 const anjali={
     name:'Anjali singh',
@@ -59,7 +60,7 @@ document.body.addEventListener('click',high5);
 const greetArr=greeting=>name=>console.log(`${greeting} ${name}`);
 greetArr('Hi')('Anjali singh')
 */
-const  Indigo= { 
+/*const  Indigo= { 
     airline:'Indigo',
     iatacode:'IN',
     bookings:[],
@@ -119,6 +120,7 @@ const addVAT=addTax.bind(null,0.23);   //null since no use of this
 console.log(addVAT(100));
 console.log(addVAT(234));
 console.log(addVAT(500));
+*/
 /******************************************** */
 //Immediately invoked function expression(IIFE)
 //Error 
@@ -126,6 +128,7 @@ console.log(addVAT(500));
 //     console.log('This will never run again');
 // }
 //Above error can be solve by (IIFE)
+/*
 (function(){
     console.log('This will never run again');
     const isPrivate=34;
@@ -137,6 +140,16 @@ console.log(isPrivate); //error since out of scope
     var notPrivate=46; //var ignore scope
 }
 console.log(isPrivate);
-console.log(notPrivate);
+console.log(notPrivate);*/
 /********************************************* */
 //Closure
+const secureBooking=function(){
+    let passengerCount=0;
+    return function(){
+        passengerCount++;
+        console.log(`${passengerCount} passengers`);
+    }
+};
+const booker=secureBooking();
+booker();
+
