@@ -87,11 +87,10 @@ bmw.brake();*/
 //const PersonCl=class {};
 
 //class declaration
-/*class PersonCl {
+class PersonCl {
   constructor(fullName, birthYear) {
     this.fullName = fullName;
     this.birthYear = birthYear;
-
   }
   // Instance Methods
   calcAge() {
@@ -127,7 +126,7 @@ PersonCl.prototype.greet = function () {
 jessica.greet();
 console.log(jessica.age);
 PersonCl.hey();
-*/
+
 //.Classes are not hoistd (it cannot be used before declaration)
 //2.Classes are first-class citizes
 //3.Classes are executed in strict mode
